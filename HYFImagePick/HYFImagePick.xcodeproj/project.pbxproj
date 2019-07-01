@@ -1,0 +1,1049 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C486350A22C1BD580096C8EC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C486350922C1BD580096C8EC /* AppDelegate.m */; };
+		C486350D22C1BD580096C8EC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C486350C22C1BD580096C8EC /* ViewController.m */; };
+		C486351022C1BD580096C8EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C486350E22C1BD580096C8EC /* Main.storyboard */; };
+		C486351222C1BD5D0096C8EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C486351122C1BD5D0096C8EC /* Assets.xcassets */; };
+		C486351522C1BD5D0096C8EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C486351322C1BD5D0096C8EC /* LaunchScreen.storyboard */; };
+		C486351822C1BD5D0096C8EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C486351722C1BD5D0096C8EC /* main.m */; };
+		C486352222C1BD5D0096C8EC /* HYFImagePickTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C486352122C1BD5D0096C8EC /* HYFImagePickTests.m */; };
+		C486352D22C1BD5D0096C8EC /* HYFImagePickUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C486352C22C1BD5D0096C8EC /* HYFImagePickUITests.m */; };
+		C486353E22C1BDDC0096C8EC /* HYFAlbumTool.m in Sources */ = {isa = PBXBuildFile; fileRef = C486353D22C1BDDC0096C8EC /* HYFAlbumTool.m */; };
+		C486354122C1BE050096C8EC /* HYFCacheTool.m in Sources */ = {isa = PBXBuildFile; fileRef = C486354022C1BE050096C8EC /* HYFCacheTool.m */; };
+		C48635AD22C1CDB60096C8EC /* HYFAlbumManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C48635AC22C1CDB60096C8EC /* HYFAlbumManager.m */; };
+		C48635B822C20C3B0096C8EC /* HYFBaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C48635B722C20C3B0096C8EC /* HYFBaseTableView.m */; };
+		C48635BB22C20C5C0096C8EC /* HYFBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C48635BA22C20C5C0096C8EC /* HYFBaseVC.m */; };
+		C48635BE22C20C750096C8EC /* HYFBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C48635BD22C20C750096C8EC /* HYFBaseModel.m */; };
+		C48635C522C20D210096C8EC /* UIViewController+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = C48635C422C20D210096C8EC /* UIViewController+Util.m */; };
+		C48635C822C20E1C0096C8EC /* NSObject+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = C48635C722C20E1C0096C8EC /* NSObject+Util.m */; };
+		C48635CB22C20F390096C8EC /* HYFAlbumListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C48635CA22C20F390096C8EC /* HYFAlbumListVC.m */; };
+		C48635CE22C20F7B0096C8EC /* HYFAlbumListTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C48635CD22C20F7B0096C8EC /* HYFAlbumListTableView.m */; };
+		C48635D122C20FA80096C8EC /* HYFBaseNavVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C48635D022C20FA80096C8EC /* HYFBaseNavVC.m */; };
+		C48636DE22C3A7330096C8EC /* HYFAlbumDataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = C48636DD22C3A7330096C8EC /* HYFAlbumDataCenter.m */; };
+		C48636E422C45D100096C8EC /* HYFBaseCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = C48636E322C45D100096C8EC /* HYFBaseCollectionView.m */; };
+		C48636EA22C45E690096C8EC /* HYFPhotosPickerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C48636E922C45E690096C8EC /* HYFPhotosPickerVC.m */; };
+		C48636EF22C462430096C8EC /* HYFPhotosPickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C48636EE22C462430096C8EC /* HYFPhotosPickerCell.m */; };
+		C48636F222C46BDE0096C8EC /* HYFAssetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C48636F122C46BDE0096C8EC /* HYFAssetModel.m */; };
+		C486372A22C47A590096C8EC /* icon／通用／删除.png in Resources */ = {isa = PBXBuildFile; fileRef = C48636F422C47A530096C8EC /* icon／通用／删除.png */; };
+		C486372B22C47A590096C8EC /* 切图@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C48636F522C47A530096C8EC /* 切图@3x.png */; };
+		C486372C22C47A590096C8EC /* icon／秀场／拍照@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C48636F622C47A530096C8EC /* icon／秀场／拍照@2x.png */; };
+		C486372D22C47A590096C8EC /* qiandao_btn_return_nor(1).png in Resources */ = {isa = PBXBuildFile; fileRef = C48636F722C47A540096C8EC /* qiandao_btn_return_nor(1).png */; };
+		C486372E22C47A590096C8EC /* 勾选@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C48636F822C47A540096C8EC /* 勾选@2x.png */; };
+		C486372F22C47A590096C8EC /* image_picker_select@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C48636F922C47A540096C8EC /* image_picker_select@3x.png */; };
+		C486373022C47A590096C8EC /* icon／秀场／精选推荐.png in Resources */ = {isa = PBXBuildFile; fileRef = C48636FA22C47A540096C8EC /* icon／秀场／精选推荐.png */; };
+		C486373122C47A590096C8EC /* icon／秀场／删除-小@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C48636FB22C47A540096C8EC /* icon／秀场／删除-小@3x.png */; };
+		C486373222C47A590096C8EC /* icon／秀场／活动标签／彩色@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C48636FC22C47A540096C8EC /* icon／秀场／活动标签／彩色@3x.png */; };
+		C486373322C47A590096C8EC /* 返回@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C48636FD22C47A540096C8EC /* 返回@3x.png */; };
+		C486373422C47A590096C8EC /* icon／通用／删除@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C48636FE22C47A540096C8EC /* icon／通用／删除@3x.png */; };
+		C486373522C47A590096C8EC /* icon／秀场／活动标签／灰色@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C48636FF22C47A540096C8EC /* icon／秀场／活动标签／灰色@3x.png */; };
+		C486373622C47A590096C8EC /* 裁剪@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C486370022C47A540096C8EC /* 裁剪@3x.png */; };
+		C486373722C47A590096C8EC /* icon／秀场／活动标签／灰色.png in Resources */ = {isa = PBXBuildFile; fileRef = C486370122C47A540096C8EC /* icon／秀场／活动标签／灰色.png */; };
+		C486373822C47A590096C8EC /* qiandao_btn_return_nor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C486370222C47A540096C8EC /* qiandao_btn_return_nor@2x.png */; };
+		C486373922C47A590096C8EC /* qiandao_btn_return_nor@2x(1).png in Resources */ = {isa = PBXBuildFile; fileRef = C486370322C47A550096C8EC /* qiandao_btn_return_nor@2x(1).png */; };
+		C486373A22C47A5A0096C8EC /* image_picker_unselect@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C486370422C47A550096C8EC /* image_picker_unselect@2x.png */; };
+		C486373B22C47A5A0096C8EC /* icon／秀场／拍照.png in Resources */ = {isa = PBXBuildFile; fileRef = C486370522C47A550096C8EC /* icon／秀场／拍照.png */; };
+		C486373C22C47A5A0096C8EC /* 切图@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C486370622C47A550096C8EC /* 切图@2x.png */; };
+		C486373D22C47A5A0096C8EC /* icon／秀场／删除-小@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C486370722C47A550096C8EC /* icon／秀场／删除-小@2x.png */; };
+		C486373E22C47A5A0096C8EC /* qiandao_btn_return_nor@3x(1).png in Resources */ = {isa = PBXBuildFile; fileRef = C486370822C47A550096C8EC /* qiandao_btn_return_nor@3x(1).png */; };
+		C486373F22C47A5A0096C8EC /* 切图.png in Resources */ = {isa = PBXBuildFile; fileRef = C486370922C47A550096C8EC /* 切图.png */; };
+		C486374022C47A5A0096C8EC /* icon／秀场／播放@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C486370A22C47A550096C8EC /* icon／秀场／播放@2x.png */; };
+		C486374122C47A5A0096C8EC /* 添加@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C486370B22C47A550096C8EC /* 添加@3x.png */; };
+		C486374222C47A5A0096C8EC /* 勾选@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C486370C22C47A550096C8EC /* 勾选@3x.png */; };
+		C486374322C47A5A0096C8EC /* icon／秀场／活动标签／彩色.png in Resources */ = {isa = PBXBuildFile; fileRef = C486370D22C47A550096C8EC /* icon／秀场／活动标签／彩色.png */; };
+		C486374422C47A5A0096C8EC /* icon／秀场／活动标签／彩色@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C486370E22C47A560096C8EC /* icon／秀场／活动标签／彩色@2x.png */; };
+		C486374522C47A5A0096C8EC /* qiandao_btn_return_nor@2x(2).png in Resources */ = {isa = PBXBuildFile; fileRef = C486370F22C47A560096C8EC /* qiandao_btn_return_nor@2x(2).png */; };
+		C486374622C47A5A0096C8EC /* icon／秀场／精选推荐@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C486371022C47A560096C8EC /* icon／秀场／精选推荐@3x.png */; };
+		C486374722C47A5A0096C8EC /* image_picker_select@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C486371122C47A560096C8EC /* image_picker_select@2x.png */; };
+		C486374922C47A5A0096C8EC /* icon／秀场／删除-小.png in Resources */ = {isa = PBXBuildFile; fileRef = C486371322C47A560096C8EC /* icon／秀场／删除-小.png */; };
+		C486374A22C47A5A0096C8EC /* qiandao_btn_return_nor.png in Resources */ = {isa = PBXBuildFile; fileRef = C486371422C47A560096C8EC /* qiandao_btn_return_nor.png */; };
+		C486374B22C47A5A0096C8EC /* icon／秀场／活动标签／灰色@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C486371522C47A560096C8EC /* icon／秀场／活动标签／灰色@2x.png */; };
+		C486374C22C47A5A0096C8EC /* icon／秀场／播放.png in Resources */ = {isa = PBXBuildFile; fileRef = C486371622C47A560096C8EC /* icon／秀场／播放.png */; };
+		C486374D22C47A5A0096C8EC /* icon／通用／未勾选.png in Resources */ = {isa = PBXBuildFile; fileRef = C486371722C47A570096C8EC /* icon／通用／未勾选.png */; };
+		C486374E22C47A5A0096C8EC /* 添加.png in Resources */ = {isa = PBXBuildFile; fileRef = C486371822C47A570096C8EC /* 添加.png */; };
+		C486374F22C47A5A0096C8EC /* 裁剪@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C486371922C47A570096C8EC /* 裁剪@2x.png */; };
+		C486375022C47A5A0096C8EC /* 裁剪.png in Resources */ = {isa = PBXBuildFile; fileRef = C486371A22C47A570096C8EC /* 裁剪.png */; };
+		C486375122C47A5A0096C8EC /* 分组 8@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C486371B22C47A570096C8EC /* 分组 8@2x.png */; };
+		C486375222C47A5A0096C8EC /* qiandao_btn_return_nor(2).png in Resources */ = {isa = PBXBuildFile; fileRef = C486371C22C47A570096C8EC /* qiandao_btn_return_nor(2).png */; };
+		C486375322C47A5A0096C8EC /* 添加@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C486371D22C47A570096C8EC /* 添加@2x.png */; };
+		C486375422C47A5A0096C8EC /* 勾选.png in Resources */ = {isa = PBXBuildFile; fileRef = C486371E22C47A570096C8EC /* 勾选.png */; };
+		C486375522C47A5A0096C8EC /* icon／通用／删除@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C486371F22C47A570096C8EC /* icon／通用／删除@2x.png */; };
+		C486375622C47A5A0096C8EC /* 返回@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C486372022C47A580096C8EC /* 返回@2x.png */; };
+		C486375722C47A5A0096C8EC /* image_picker_unselect@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C486372122C47A580096C8EC /* image_picker_unselect@3x.png */; };
+		C486375822C47A5A0096C8EC /* icon／秀场／播放@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C486372222C47A580096C8EC /* icon／秀场／播放@3x.png */; };
+		C486375922C47A5A0096C8EC /* qiandao_btn_return_nor@3x(2).png in Resources */ = {isa = PBXBuildFile; fileRef = C486372322C47A580096C8EC /* qiandao_btn_return_nor@3x(2).png */; };
+		C486375A22C47A5A0096C8EC /* 分组 8.png in Resources */ = {isa = PBXBuildFile; fileRef = C486372422C47A580096C8EC /* 分组 8.png */; };
+		C486375B22C47A5A0096C8EC /* 分组 8@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C486372522C47A580096C8EC /* 分组 8@3x.png */; };
+		C486375C22C47A5A0096C8EC /* icon／秀场／拍照@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C486372622C47A590096C8EC /* icon／秀场／拍照@3x.png */; };
+		C486375D22C47A5A0096C8EC /* 返回.png in Resources */ = {isa = PBXBuildFile; fileRef = C486372722C47A590096C8EC /* 返回.png */; };
+		C486375E22C47A5A0096C8EC /* icon／秀场／精选推荐@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C486372822C47A590096C8EC /* icon／秀场／精选推荐@2x.png */; };
+		C486375F22C47A5A0096C8EC /* qiandao_btn_return_nor@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C486372922C47A590096C8EC /* qiandao_btn_return_nor@3x.png */; };
+		C4EE224722C66D6200ADF795 /* HYFBasePreViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EE224622C66D6200ADF795 /* HYFBasePreViewCell.m */; };
+		C4EE224D22C8A70B00ADF795 /* HYFBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EE224C22C8A70B00ADF795 /* HYFBottomView.m */; };
+		C4EE225022C8ACFA00ADF795 /* HYFPreThumdBottomViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EE224F22C8ACFA00ADF795 /* HYFPreThumdBottomViewCell.m */; };
+		C4F3188322C5C34800DF2C28 /* UIView+HYF.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F3188222C5C34800DF2C28 /* UIView+HYF.m */; };
+		C4F3188622C6001800DF2C28 /* HYFPhotosPreviewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F3188522C6001800DF2C28 /* HYFPhotosPreviewVC.m */; };
+		C4F3188922C600FB00DF2C28 /* HYFPhotosPreviewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F3188822C600FB00DF2C28 /* HYFPhotosPreviewCell.m */; };
+		C4F3188D22C60BC400DF2C28 /* HYFPhotosPickerLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F3188C22C60BC400DF2C28 /* HYFPhotosPickerLayout.m */; };
+		C4F3189022C60BDF00DF2C28 /* HYFPhotosPreviewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F3188F22C60BDF00DF2C28 /* HYFPhotosPreviewLayout.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C486351E22C1BD5D0096C8EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C48634FD22C1BD580096C8EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C486350422C1BD580096C8EC;
+			remoteInfo = HYFImagePick;
+		};
+		C486352922C1BD5D0096C8EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C48634FD22C1BD580096C8EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C486350422C1BD580096C8EC;
+			remoteInfo = HYFImagePick;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C486350522C1BD580096C8EC /* HYFImagePick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HYFImagePick.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C486350822C1BD580096C8EC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C486350922C1BD580096C8EC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C486350B22C1BD580096C8EC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C486350C22C1BD580096C8EC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C486350F22C1BD580096C8EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C486351122C1BD5D0096C8EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C486351422C1BD5D0096C8EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C486351622C1BD5D0096C8EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C486351722C1BD5D0096C8EC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C486351D22C1BD5D0096C8EC /* HYFImagePickTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HYFImagePickTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C486352122C1BD5D0096C8EC /* HYFImagePickTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYFImagePickTests.m; sourceTree = "<group>"; };
+		C486352322C1BD5D0096C8EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C486352822C1BD5D0096C8EC /* HYFImagePickUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HYFImagePickUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C486352C22C1BD5D0096C8EC /* HYFImagePickUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYFImagePickUITests.m; sourceTree = "<group>"; };
+		C486352E22C1BD5D0096C8EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C486353C22C1BDDC0096C8EC /* HYFAlbumTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYFAlbumTool.h; sourceTree = "<group>"; };
+		C486353D22C1BDDC0096C8EC /* HYFAlbumTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYFAlbumTool.m; sourceTree = "<group>"; };
+		C486353F22C1BE050096C8EC /* HYFCacheTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYFCacheTool.h; sourceTree = "<group>"; };
+		C486354022C1BE050096C8EC /* HYFCacheTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYFCacheTool.m; sourceTree = "<group>"; };
+		C48635AB22C1CDB60096C8EC /* HYFAlbumManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYFAlbumManager.h; sourceTree = "<group>"; };
+		C48635AC22C1CDB60096C8EC /* HYFAlbumManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYFAlbumManager.m; sourceTree = "<group>"; };
+		C48635B622C20C3B0096C8EC /* HYFBaseTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYFBaseTableView.h; sourceTree = "<group>"; };
+		C48635B722C20C3B0096C8EC /* HYFBaseTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYFBaseTableView.m; sourceTree = "<group>"; };
+		C48635B922C20C5C0096C8EC /* HYFBaseVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYFBaseVC.h; sourceTree = "<group>"; };
+		C48635BA22C20C5C0096C8EC /* HYFBaseVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYFBaseVC.m; sourceTree = "<group>"; };
+		C48635BC22C20C750096C8EC /* HYFBaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYFBaseModel.h; sourceTree = "<group>"; };
+		C48635BD22C20C750096C8EC /* HYFBaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYFBaseModel.m; sourceTree = "<group>"; };
+		C48635C322C20D210096C8EC /* UIViewController+Util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Util.h"; sourceTree = "<group>"; };
+		C48635C422C20D210096C8EC /* UIViewController+Util.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Util.m"; sourceTree = "<group>"; };
+		C48635C622C20E1C0096C8EC /* NSObject+Util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Util.h"; sourceTree = "<group>"; };
+		C48635C722C20E1C0096C8EC /* NSObject+Util.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Util.m"; sourceTree = "<group>"; };
+		C48635C922C20F390096C8EC /* HYFAlbumListVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYFAlbumListVC.h; sourceTree = "<group>"; };
+		C48635CA22C20F390096C8EC /* HYFAlbumListVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYFAlbumListVC.m; sourceTree = "<group>"; };
+		C48635CC22C20F7B0096C8EC /* HYFAlbumListTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYFAlbumListTableView.h; sourceTree = "<group>"; };
+		C48635CD22C20F7B0096C8EC /* HYFAlbumListTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYFAlbumListTableView.m; sourceTree = "<group>"; };
+		C48635CF22C20FA80096C8EC /* HYFBaseNavVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYFBaseNavVC.h; sourceTree = "<group>"; };
+		C48635D022C20FA80096C8EC /* HYFBaseNavVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYFBaseNavVC.m; sourceTree = "<group>"; };
+		C48636DC22C3A7330096C8EC /* HYFAlbumDataCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYFAlbumDataCenter.h; sourceTree = "<group>"; };
+		C48636DD22C3A7330096C8EC /* HYFAlbumDataCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYFAlbumDataCenter.m; sourceTree = "<group>"; };
+		C48636E222C45D100096C8EC /* HYFBaseCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYFBaseCollectionView.h; sourceTree = "<group>"; };
+		C48636E322C45D100096C8EC /* HYFBaseCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYFBaseCollectionView.m; sourceTree = "<group>"; };
+		C48636E822C45E690096C8EC /* HYFPhotosPickerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYFPhotosPickerVC.h; sourceTree = "<group>"; };
+		C48636E922C45E690096C8EC /* HYFPhotosPickerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYFPhotosPickerVC.m; sourceTree = "<group>"; };
+		C48636EC22C460AB0096C8EC /* HYFMacroHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYFMacroHeader.h; sourceTree = "<group>"; };
+		C48636ED22C462430096C8EC /* HYFPhotosPickerCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYFPhotosPickerCell.h; sourceTree = "<group>"; };
+		C48636EE22C462430096C8EC /* HYFPhotosPickerCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYFPhotosPickerCell.m; sourceTree = "<group>"; };
+		C48636F022C46BDE0096C8EC /* HYFAssetModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYFAssetModel.h; sourceTree = "<group>"; };
+		C48636F122C46BDE0096C8EC /* HYFAssetModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYFAssetModel.m; sourceTree = "<group>"; };
+		C48636F422C47A530096C8EC /* icon／通用／删除.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon／通用／删除.png"; sourceTree = "<group>"; };
+		C48636F522C47A530096C8EC /* 切图@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "切图@3x.png"; sourceTree = "<group>"; };
+		C48636F622C47A530096C8EC /* icon／秀场／拍照@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon／秀场／拍照@2x.png"; sourceTree = "<group>"; };
+		C48636F722C47A540096C8EC /* qiandao_btn_return_nor(1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qiandao_btn_return_nor(1).png"; sourceTree = "<group>"; };
+		C48636F822C47A540096C8EC /* 勾选@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "勾选@2x.png"; sourceTree = "<group>"; };
+		C48636F922C47A540096C8EC /* image_picker_select@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "image_picker_select@3x.png"; sourceTree = "<group>"; };
+		C48636FA22C47A540096C8EC /* icon／秀场／精选推荐.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon／秀场／精选推荐.png"; sourceTree = "<group>"; };
+		C48636FB22C47A540096C8EC /* icon／秀场／删除-小@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon／秀场／删除-小@3x.png"; sourceTree = "<group>"; };
+		C48636FC22C47A540096C8EC /* icon／秀场／活动标签／彩色@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon／秀场／活动标签／彩色@3x.png"; sourceTree = "<group>"; };
+		C48636FD22C47A540096C8EC /* 返回@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "返回@3x.png"; sourceTree = "<group>"; };
+		C48636FE22C47A540096C8EC /* icon／通用／删除@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon／通用／删除@3x.png"; sourceTree = "<group>"; };
+		C48636FF22C47A540096C8EC /* icon／秀场／活动标签／灰色@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon／秀场／活动标签／灰色@3x.png"; sourceTree = "<group>"; };
+		C486370022C47A540096C8EC /* 裁剪@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "裁剪@3x.png"; sourceTree = "<group>"; };
+		C486370122C47A540096C8EC /* icon／秀场／活动标签／灰色.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon／秀场／活动标签／灰色.png"; sourceTree = "<group>"; };
+		C486370222C47A540096C8EC /* qiandao_btn_return_nor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qiandao_btn_return_nor@2x.png"; sourceTree = "<group>"; };
+		C486370322C47A550096C8EC /* qiandao_btn_return_nor@2x(1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qiandao_btn_return_nor@2x(1).png"; sourceTree = "<group>"; };
+		C486370422C47A550096C8EC /* image_picker_unselect@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "image_picker_unselect@2x.png"; sourceTree = "<group>"; };
+		C486370522C47A550096C8EC /* icon／秀场／拍照.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon／秀场／拍照.png"; sourceTree = "<group>"; };
+		C486370622C47A550096C8EC /* 切图@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "切图@2x.png"; sourceTree = "<group>"; };
+		C486370722C47A550096C8EC /* icon／秀场／删除-小@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon／秀场／删除-小@2x.png"; sourceTree = "<group>"; };
+		C486370822C47A550096C8EC /* qiandao_btn_return_nor@3x(1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qiandao_btn_return_nor@3x(1).png"; sourceTree = "<group>"; };
+		C486370922C47A550096C8EC /* 切图.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "切图.png"; sourceTree = "<group>"; };
+		C486370A22C47A550096C8EC /* icon／秀场／播放@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon／秀场／播放@2x.png"; sourceTree = "<group>"; };
+		C486370B22C47A550096C8EC /* 添加@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "添加@3x.png"; sourceTree = "<group>"; };
+		C486370C22C47A550096C8EC /* 勾选@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "勾选@3x.png"; sourceTree = "<group>"; };
+		C486370D22C47A550096C8EC /* icon／秀场／活动标签／彩色.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon／秀场／活动标签／彩色.png"; sourceTree = "<group>"; };
+		C486370E22C47A560096C8EC /* icon／秀场／活动标签／彩色@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon／秀场／活动标签／彩色@2x.png"; sourceTree = "<group>"; };
+		C486370F22C47A560096C8EC /* qiandao_btn_return_nor@2x(2).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qiandao_btn_return_nor@2x(2).png"; sourceTree = "<group>"; };
+		C486371022C47A560096C8EC /* icon／秀场／精选推荐@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon／秀场／精选推荐@3x.png"; sourceTree = "<group>"; };
+		C486371122C47A560096C8EC /* image_picker_select@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "image_picker_select@2x.png"; sourceTree = "<group>"; };
+		C486371322C47A560096C8EC /* icon／秀场／删除-小.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon／秀场／删除-小.png"; sourceTree = "<group>"; };
+		C486371422C47A560096C8EC /* qiandao_btn_return_nor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qiandao_btn_return_nor.png; sourceTree = "<group>"; };
+		C486371522C47A560096C8EC /* icon／秀场／活动标签／灰色@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon／秀场／活动标签／灰色@2x.png"; sourceTree = "<group>"; };
+		C486371622C47A560096C8EC /* icon／秀场／播放.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon／秀场／播放.png"; sourceTree = "<group>"; };
+		C486371722C47A570096C8EC /* icon／通用／未勾选.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon／通用／未勾选.png"; sourceTree = "<group>"; };
+		C486371822C47A570096C8EC /* 添加.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "添加.png"; sourceTree = "<group>"; };
+		C486371922C47A570096C8EC /* 裁剪@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "裁剪@2x.png"; sourceTree = "<group>"; };
+		C486371A22C47A570096C8EC /* 裁剪.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "裁剪.png"; sourceTree = "<group>"; };
+		C486371B22C47A570096C8EC /* 分组 8@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "分组 8@2x.png"; sourceTree = "<group>"; };
+		C486371C22C47A570096C8EC /* qiandao_btn_return_nor(2).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qiandao_btn_return_nor(2).png"; sourceTree = "<group>"; };
+		C486371D22C47A570096C8EC /* 添加@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "添加@2x.png"; sourceTree = "<group>"; };
+		C486371E22C47A570096C8EC /* 勾选.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "勾选.png"; sourceTree = "<group>"; };
+		C486371F22C47A570096C8EC /* icon／通用／删除@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon／通用／删除@2x.png"; sourceTree = "<group>"; };
+		C486372022C47A580096C8EC /* 返回@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "返回@2x.png"; sourceTree = "<group>"; };
+		C486372122C47A580096C8EC /* image_picker_unselect@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "image_picker_unselect@3x.png"; sourceTree = "<group>"; };
+		C486372222C47A580096C8EC /* icon／秀场／播放@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon／秀场／播放@3x.png"; sourceTree = "<group>"; };
+		C486372322C47A580096C8EC /* qiandao_btn_return_nor@3x(2).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qiandao_btn_return_nor@3x(2).png"; sourceTree = "<group>"; };
+		C486372422C47A580096C8EC /* 分组 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "分组 8.png"; sourceTree = "<group>"; };
+		C486372522C47A580096C8EC /* 分组 8@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "分组 8@3x.png"; sourceTree = "<group>"; };
+		C486372622C47A590096C8EC /* icon／秀场／拍照@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon／秀场／拍照@3x.png"; sourceTree = "<group>"; };
+		C486372722C47A590096C8EC /* 返回.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "返回.png"; sourceTree = "<group>"; };
+		C486372822C47A590096C8EC /* icon／秀场／精选推荐@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon／秀场／精选推荐@2x.png"; sourceTree = "<group>"; };
+		C486372922C47A590096C8EC /* qiandao_btn_return_nor@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qiandao_btn_return_nor@3x.png"; sourceTree = "<group>"; };
+		C4EE224522C66D6200ADF795 /* HYFBasePreViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYFBasePreViewCell.h; sourceTree = "<group>"; };
+		C4EE224622C66D6200ADF795 /* HYFBasePreViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYFBasePreViewCell.m; sourceTree = "<group>"; };
+		C4EE224B22C8A70B00ADF795 /* HYFBottomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYFBottomView.h; sourceTree = "<group>"; };
+		C4EE224C22C8A70B00ADF795 /* HYFBottomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYFBottomView.m; sourceTree = "<group>"; };
+		C4EE224E22C8ACFA00ADF795 /* HYFPreThumdBottomViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYFPreThumdBottomViewCell.h; sourceTree = "<group>"; };
+		C4EE224F22C8ACFA00ADF795 /* HYFPreThumdBottomViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYFPreThumdBottomViewCell.m; sourceTree = "<group>"; };
+		C4F3188122C5C34800DF2C28 /* UIView+HYF.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+HYF.h"; sourceTree = "<group>"; };
+		C4F3188222C5C34800DF2C28 /* UIView+HYF.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+HYF.m"; sourceTree = "<group>"; };
+		C4F3188422C6001800DF2C28 /* HYFPhotosPreviewVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYFPhotosPreviewVC.h; sourceTree = "<group>"; };
+		C4F3188522C6001800DF2C28 /* HYFPhotosPreviewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYFPhotosPreviewVC.m; sourceTree = "<group>"; };
+		C4F3188722C600FB00DF2C28 /* HYFPhotosPreviewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYFPhotosPreviewCell.h; sourceTree = "<group>"; };
+		C4F3188822C600FB00DF2C28 /* HYFPhotosPreviewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYFPhotosPreviewCell.m; sourceTree = "<group>"; };
+		C4F3188B22C60BC400DF2C28 /* HYFPhotosPickerLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYFPhotosPickerLayout.h; sourceTree = "<group>"; };
+		C4F3188C22C60BC400DF2C28 /* HYFPhotosPickerLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYFPhotosPickerLayout.m; sourceTree = "<group>"; };
+		C4F3188E22C60BDF00DF2C28 /* HYFPhotosPreviewLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYFPhotosPreviewLayout.h; sourceTree = "<group>"; };
+		C4F3188F22C60BDF00DF2C28 /* HYFPhotosPreviewLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYFPhotosPreviewLayout.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C486350222C1BD580096C8EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C486351A22C1BD5D0096C8EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C486352522C1BD5D0096C8EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C48634FC22C1BD580096C8EC = {
+			isa = PBXGroup;
+			children = (
+				C486350722C1BD580096C8EC /* HYFImagePick */,
+				C486352022C1BD5D0096C8EC /* HYFImagePickTests */,
+				C486352B22C1BD5D0096C8EC /* HYFImagePickUITests */,
+				C486350622C1BD580096C8EC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C486350622C1BD580096C8EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C486350522C1BD580096C8EC /* HYFImagePick.app */,
+				C486351D22C1BD5D0096C8EC /* HYFImagePickTests.xctest */,
+				C486352822C1BD5D0096C8EC /* HYFImagePickUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C486350722C1BD580096C8EC /* HYFImagePick */ = {
+			isa = PBXGroup;
+			children = (
+				C486353A22C1BD830096C8EC /* HYFImagePickSDK */,
+				C486350822C1BD580096C8EC /* AppDelegate.h */,
+				C486350922C1BD580096C8EC /* AppDelegate.m */,
+				C486350B22C1BD580096C8EC /* ViewController.h */,
+				C486350C22C1BD580096C8EC /* ViewController.m */,
+				C486350E22C1BD580096C8EC /* Main.storyboard */,
+				C486351122C1BD5D0096C8EC /* Assets.xcassets */,
+				C486351322C1BD5D0096C8EC /* LaunchScreen.storyboard */,
+				C486351622C1BD5D0096C8EC /* Info.plist */,
+				C486351722C1BD5D0096C8EC /* main.m */,
+			);
+			path = HYFImagePick;
+			sourceTree = "<group>";
+		};
+		C486352022C1BD5D0096C8EC /* HYFImagePickTests */ = {
+			isa = PBXGroup;
+			children = (
+				C486352122C1BD5D0096C8EC /* HYFImagePickTests.m */,
+				C486352322C1BD5D0096C8EC /* Info.plist */,
+			);
+			path = HYFImagePickTests;
+			sourceTree = "<group>";
+		};
+		C486352B22C1BD5D0096C8EC /* HYFImagePickUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C486352C22C1BD5D0096C8EC /* HYFImagePickUITests.m */,
+				C486352E22C1BD5D0096C8EC /* Info.plist */,
+			);
+			path = HYFImagePickUITests;
+			sourceTree = "<group>";
+		};
+		C486353A22C1BD830096C8EC /* HYFImagePickSDK */ = {
+			isa = PBXGroup;
+			children = (
+				C48635AE22C20BCF0096C8EC /* HYFUIKit */,
+				C486353B22C1BD920096C8EC /* HYFUtil */,
+				C48636EC22C460AB0096C8EC /* HYFMacroHeader.h */,
+			);
+			path = HYFImagePickSDK;
+			sourceTree = "<group>";
+		};
+		C486353B22C1BD920096C8EC /* HYFUtil */ = {
+			isa = PBXGroup;
+			children = (
+				C486353C22C1BDDC0096C8EC /* HYFAlbumTool.h */,
+				C486353D22C1BDDC0096C8EC /* HYFAlbumTool.m */,
+				C486353F22C1BE050096C8EC /* HYFCacheTool.h */,
+				C486354022C1BE050096C8EC /* HYFCacheTool.m */,
+				C48635AB22C1CDB60096C8EC /* HYFAlbumManager.h */,
+				C48635AC22C1CDB60096C8EC /* HYFAlbumManager.m */,
+				C48636DC22C3A7330096C8EC /* HYFAlbumDataCenter.h */,
+				C48636DD22C3A7330096C8EC /* HYFAlbumDataCenter.m */,
+			);
+			path = HYFUtil;
+			sourceTree = "<group>";
+		};
+		C48635AE22C20BCF0096C8EC /* HYFUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				C4F3188A22C60B6800DF2C28 /* Layout */,
+				C48636F322C47A080096C8EC /* Resource */,
+				C48635BF22C20C9B0096C8EC /* Category */,
+				C48635AF22C20BF90096C8EC /* Base */,
+				C48635B122C20BF90096C8EC /* Model */,
+				C48635B222C20BF90096C8EC /* VC */,
+				C48635B022C20BF90096C8EC /* View */,
+			);
+			path = HYFUIKit;
+			sourceTree = "<group>";
+		};
+		C48635AF22C20BF90096C8EC /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				C48635B322C20C1D0096C8EC /* Model */,
+				C48635B422C20C1D0096C8EC /* VC */,
+				C48635B522C20C1D0096C8EC /* View */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		C48635B022C20BF90096C8EC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C48635CC22C20F7B0096C8EC /* HYFAlbumListTableView.h */,
+				C48635CD22C20F7B0096C8EC /* HYFAlbumListTableView.m */,
+				C48636ED22C462430096C8EC /* HYFPhotosPickerCell.h */,
+				C48636EE22C462430096C8EC /* HYFPhotosPickerCell.m */,
+				C4F3188722C600FB00DF2C28 /* HYFPhotosPreviewCell.h */,
+				C4F3188822C600FB00DF2C28 /* HYFPhotosPreviewCell.m */,
+				C4EE224522C66D6200ADF795 /* HYFBasePreViewCell.h */,
+				C4EE224622C66D6200ADF795 /* HYFBasePreViewCell.m */,
+				C4EE224B22C8A70B00ADF795 /* HYFBottomView.h */,
+				C4EE224C22C8A70B00ADF795 /* HYFBottomView.m */,
+				C4EE224E22C8ACFA00ADF795 /* HYFPreThumdBottomViewCell.h */,
+				C4EE224F22C8ACFA00ADF795 /* HYFPreThumdBottomViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C48635B122C20BF90096C8EC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C48636F022C46BDE0096C8EC /* HYFAssetModel.h */,
+				C48636F122C46BDE0096C8EC /* HYFAssetModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C48635B222C20BF90096C8EC /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				C48635C922C20F390096C8EC /* HYFAlbumListVC.h */,
+				C48635CA22C20F390096C8EC /* HYFAlbumListVC.m */,
+				C48636E822C45E690096C8EC /* HYFPhotosPickerVC.h */,
+				C48636E922C45E690096C8EC /* HYFPhotosPickerVC.m */,
+				C4F3188422C6001800DF2C28 /* HYFPhotosPreviewVC.h */,
+				C4F3188522C6001800DF2C28 /* HYFPhotosPreviewVC.m */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		C48635B322C20C1D0096C8EC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C48635BC22C20C750096C8EC /* HYFBaseModel.h */,
+				C48635BD22C20C750096C8EC /* HYFBaseModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C48635B422C20C1D0096C8EC /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				C48635B922C20C5C0096C8EC /* HYFBaseVC.h */,
+				C48635BA22C20C5C0096C8EC /* HYFBaseVC.m */,
+				C48635CF22C20FA80096C8EC /* HYFBaseNavVC.h */,
+				C48635D022C20FA80096C8EC /* HYFBaseNavVC.m */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		C48635B522C20C1D0096C8EC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C48635B622C20C3B0096C8EC /* HYFBaseTableView.h */,
+				C48635B722C20C3B0096C8EC /* HYFBaseTableView.m */,
+				C48636E222C45D100096C8EC /* HYFBaseCollectionView.h */,
+				C48636E322C45D100096C8EC /* HYFBaseCollectionView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C48635BF22C20C9B0096C8EC /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				C48635C322C20D210096C8EC /* UIViewController+Util.h */,
+				C48635C422C20D210096C8EC /* UIViewController+Util.m */,
+				C48635C622C20E1C0096C8EC /* NSObject+Util.h */,
+				C48635C722C20E1C0096C8EC /* NSObject+Util.m */,
+				C4F3188122C5C34800DF2C28 /* UIView+HYF.h */,
+				C4F3188222C5C34800DF2C28 /* UIView+HYF.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		C48636F322C47A080096C8EC /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				C486371A22C47A570096C8EC /* 裁剪.png */,
+				C486371922C47A570096C8EC /* 裁剪@2x.png */,
+				C486370022C47A540096C8EC /* 裁剪@3x.png */,
+				C486372722C47A590096C8EC /* 返回.png */,
+				C486372022C47A580096C8EC /* 返回@2x.png */,
+				C48636FD22C47A540096C8EC /* 返回@3x.png */,
+				C486372422C47A580096C8EC /* 分组 8.png */,
+				C486371B22C47A570096C8EC /* 分组 8@2x.png */,
+				C486372522C47A580096C8EC /* 分组 8@3x.png */,
+				C486371E22C47A570096C8EC /* 勾选.png */,
+				C48636F822C47A540096C8EC /* 勾选@2x.png */,
+				C486370C22C47A550096C8EC /* 勾选@3x.png */,
+				C486370922C47A550096C8EC /* 切图.png */,
+				C486370622C47A550096C8EC /* 切图@2x.png */,
+				C48636F522C47A530096C8EC /* 切图@3x.png */,
+				C486371822C47A570096C8EC /* 添加.png */,
+				C486371D22C47A570096C8EC /* 添加@2x.png */,
+				C486370B22C47A550096C8EC /* 添加@3x.png */,
+				C486371122C47A560096C8EC /* image_picker_select@2x.png */,
+				C48636F922C47A540096C8EC /* image_picker_select@3x.png */,
+				C48636F422C47A530096C8EC /* icon／通用／删除.png */,
+				C486371F22C47A570096C8EC /* icon／通用／删除@2x.png */,
+				C48636FE22C47A540096C8EC /* icon／通用／删除@3x.png */,
+				C486371722C47A570096C8EC /* icon／通用／未勾选.png */,
+				C486370422C47A550096C8EC /* image_picker_unselect@2x.png */,
+				C486372122C47A580096C8EC /* image_picker_unselect@3x.png */,
+				C486371622C47A560096C8EC /* icon／秀场／播放.png */,
+				C486370A22C47A550096C8EC /* icon／秀场／播放@2x.png */,
+				C486372222C47A580096C8EC /* icon／秀场／播放@3x.png */,
+				C486370D22C47A550096C8EC /* icon／秀场／活动标签／彩色.png */,
+				C486370E22C47A560096C8EC /* icon／秀场／活动标签／彩色@2x.png */,
+				C48636FC22C47A540096C8EC /* icon／秀场／活动标签／彩色@3x.png */,
+				C486370122C47A540096C8EC /* icon／秀场／活动标签／灰色.png */,
+				C486371522C47A560096C8EC /* icon／秀场／活动标签／灰色@2x.png */,
+				C48636FF22C47A540096C8EC /* icon／秀场／活动标签／灰色@3x.png */,
+				C48636FA22C47A540096C8EC /* icon／秀场／精选推荐.png */,
+				C486372822C47A590096C8EC /* icon／秀场／精选推荐@2x.png */,
+				C486371022C47A560096C8EC /* icon／秀场／精选推荐@3x.png */,
+				C486370522C47A550096C8EC /* icon／秀场／拍照.png */,
+				C48636F622C47A530096C8EC /* icon／秀场／拍照@2x.png */,
+				C486372622C47A590096C8EC /* icon／秀场／拍照@3x.png */,
+				C486371322C47A560096C8EC /* icon／秀场／删除-小.png */,
+				C486370722C47A550096C8EC /* icon／秀场／删除-小@2x.png */,
+				C48636FB22C47A540096C8EC /* icon／秀场／删除-小@3x.png */,
+				C486371422C47A560096C8EC /* qiandao_btn_return_nor.png */,
+				C48636F722C47A540096C8EC /* qiandao_btn_return_nor(1).png */,
+				C486371C22C47A570096C8EC /* qiandao_btn_return_nor(2).png */,
+				C486370222C47A540096C8EC /* qiandao_btn_return_nor@2x.png */,
+				C486370322C47A550096C8EC /* qiandao_btn_return_nor@2x(1).png */,
+				C486370F22C47A560096C8EC /* qiandao_btn_return_nor@2x(2).png */,
+				C486372922C47A590096C8EC /* qiandao_btn_return_nor@3x.png */,
+				C486370822C47A550096C8EC /* qiandao_btn_return_nor@3x(1).png */,
+				C486372322C47A580096C8EC /* qiandao_btn_return_nor@3x(2).png */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		C4F3188A22C60B6800DF2C28 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				C4F3188B22C60BC400DF2C28 /* HYFPhotosPickerLayout.h */,
+				C4F3188C22C60BC400DF2C28 /* HYFPhotosPickerLayout.m */,
+				C4F3188E22C60BDF00DF2C28 /* HYFPhotosPreviewLayout.h */,
+				C4F3188F22C60BDF00DF2C28 /* HYFPhotosPreviewLayout.m */,
+			);
+			name = Layout;
+			path = HYFImagePick/HYFImagePickSDK/HYFUIKit/Layout;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C486350422C1BD580096C8EC /* HYFImagePick */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C486353122C1BD5D0096C8EC /* Build configuration list for PBXNativeTarget "HYFImagePick" */;
+			buildPhases = (
+				C486350122C1BD580096C8EC /* Sources */,
+				C486350222C1BD580096C8EC /* Frameworks */,
+				C486350322C1BD580096C8EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HYFImagePick;
+			productName = HYFImagePick;
+			productReference = C486350522C1BD580096C8EC /* HYFImagePick.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C486351C22C1BD5D0096C8EC /* HYFImagePickTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C486353422C1BD5D0096C8EC /* Build configuration list for PBXNativeTarget "HYFImagePickTests" */;
+			buildPhases = (
+				C486351922C1BD5D0096C8EC /* Sources */,
+				C486351A22C1BD5D0096C8EC /* Frameworks */,
+				C486351B22C1BD5D0096C8EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C486351F22C1BD5D0096C8EC /* PBXTargetDependency */,
+			);
+			name = HYFImagePickTests;
+			productName = HYFImagePickTests;
+			productReference = C486351D22C1BD5D0096C8EC /* HYFImagePickTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C486352722C1BD5D0096C8EC /* HYFImagePickUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C486353722C1BD5D0096C8EC /* Build configuration list for PBXNativeTarget "HYFImagePickUITests" */;
+			buildPhases = (
+				C486352422C1BD5D0096C8EC /* Sources */,
+				C486352522C1BD5D0096C8EC /* Frameworks */,
+				C486352622C1BD5D0096C8EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C486352A22C1BD5D0096C8EC /* PBXTargetDependency */,
+			);
+			name = HYFImagePickUITests;
+			productName = HYFImagePickUITests;
+			productReference = C486352822C1BD5D0096C8EC /* HYFImagePickUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C48634FD22C1BD580096C8EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "胡玉峰";
+				TargetAttributes = {
+					C486350422C1BD580096C8EC = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					C486351C22C1BD5D0096C8EC = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = C486350422C1BD580096C8EC;
+					};
+					C486352722C1BD5D0096C8EC = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = C486350422C1BD580096C8EC;
+					};
+				};
+			};
+			buildConfigurationList = C486350022C1BD580096C8EC /* Build configuration list for PBXProject "HYFImagePick" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C48634FC22C1BD580096C8EC;
+			productRefGroup = C486350622C1BD580096C8EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C486350422C1BD580096C8EC /* HYFImagePick */,
+				C486351C22C1BD5D0096C8EC /* HYFImagePickTests */,
+				C486352722C1BD5D0096C8EC /* HYFImagePickUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C486350322C1BD580096C8EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C486373F22C47A5A0096C8EC /* 切图.png in Resources */,
+				C486373322C47A590096C8EC /* 返回@3x.png in Resources */,
+				C486374A22C47A5A0096C8EC /* qiandao_btn_return_nor.png in Resources */,
+				C486373D22C47A5A0096C8EC /* icon／秀场／删除-小@2x.png in Resources */,
+				C486375022C47A5A0096C8EC /* 裁剪.png in Resources */,
+				C486373A22C47A5A0096C8EC /* image_picker_unselect@2x.png in Resources */,
+				C486375F22C47A5A0096C8EC /* qiandao_btn_return_nor@3x.png in Resources */,
+				C486374722C47A5A0096C8EC /* image_picker_select@2x.png in Resources */,
+				C486373122C47A590096C8EC /* icon／秀场／删除-小@3x.png in Resources */,
+				C486373922C47A590096C8EC /* qiandao_btn_return_nor@2x(1).png in Resources */,
+				C486375822C47A5A0096C8EC /* icon／秀场／播放@3x.png in Resources */,
+				C486373622C47A590096C8EC /* 裁剪@3x.png in Resources */,
+				C486373822C47A590096C8EC /* qiandao_btn_return_nor@2x.png in Resources */,
+				C486375B22C47A5A0096C8EC /* 分组 8@3x.png in Resources */,
+				C486374422C47A5A0096C8EC /* icon／秀场／活动标签／彩色@2x.png in Resources */,
+				C486372D22C47A590096C8EC /* qiandao_btn_return_nor(1).png in Resources */,
+				C486372F22C47A590096C8EC /* image_picker_select@3x.png in Resources */,
+				C486373722C47A590096C8EC /* icon／秀场／活动标签／灰色.png in Resources */,
+				C486373E22C47A5A0096C8EC /* qiandao_btn_return_nor@3x(1).png in Resources */,
+				C486375222C47A5A0096C8EC /* qiandao_btn_return_nor(2).png in Resources */,
+				C486351522C1BD5D0096C8EC /* LaunchScreen.storyboard in Resources */,
+				C486375722C47A5A0096C8EC /* image_picker_unselect@3x.png in Resources */,
+				C486375122C47A5A0096C8EC /* 分组 8@2x.png in Resources */,
+				C486373022C47A590096C8EC /* icon／秀场／精选推荐.png in Resources */,
+				C486374222C47A5A0096C8EC /* 勾选@3x.png in Resources */,
+				C486374B22C47A5A0096C8EC /* icon／秀场／活动标签／灰色@2x.png in Resources */,
+				C486375D22C47A5A0096C8EC /* 返回.png in Resources */,
+				C486373C22C47A5A0096C8EC /* 切图@2x.png in Resources */,
+				C486374E22C47A5A0096C8EC /* 添加.png in Resources */,
+				C486375622C47A5A0096C8EC /* 返回@2x.png in Resources */,
+				C486375522C47A5A0096C8EC /* icon／通用／删除@2x.png in Resources */,
+				C486374622C47A5A0096C8EC /* icon／秀场／精选推荐@3x.png in Resources */,
+				C486375C22C47A5A0096C8EC /* icon／秀场／拍照@3x.png in Resources */,
+				C486374522C47A5A0096C8EC /* qiandao_btn_return_nor@2x(2).png in Resources */,
+				C486372B22C47A590096C8EC /* 切图@3x.png in Resources */,
+				C486374922C47A5A0096C8EC /* icon／秀场／删除-小.png in Resources */,
+				C486374F22C47A5A0096C8EC /* 裁剪@2x.png in Resources */,
+				C486351222C1BD5D0096C8EC /* Assets.xcassets in Resources */,
+				C486374322C47A5A0096C8EC /* icon／秀场／活动标签／彩色.png in Resources */,
+				C486372C22C47A590096C8EC /* icon／秀场／拍照@2x.png in Resources */,
+				C486372E22C47A590096C8EC /* 勾选@2x.png in Resources */,
+				C486375422C47A5A0096C8EC /* 勾选.png in Resources */,
+				C486374122C47A5A0096C8EC /* 添加@3x.png in Resources */,
+				C486373522C47A590096C8EC /* icon／秀场／活动标签／灰色@3x.png in Resources */,
+				C486374022C47A5A0096C8EC /* icon／秀场／播放@2x.png in Resources */,
+				C486375322C47A5A0096C8EC /* 添加@2x.png in Resources */,
+				C486373B22C47A5A0096C8EC /* icon／秀场／拍照.png in Resources */,
+				C486373422C47A590096C8EC /* icon／通用／删除@3x.png in Resources */,
+				C486375E22C47A5A0096C8EC /* icon／秀场／精选推荐@2x.png in Resources */,
+				C486375A22C47A5A0096C8EC /* 分组 8.png in Resources */,
+				C486372A22C47A590096C8EC /* icon／通用／删除.png in Resources */,
+				C486374D22C47A5A0096C8EC /* icon／通用／未勾选.png in Resources */,
+				C486351022C1BD580096C8EC /* Main.storyboard in Resources */,
+				C486373222C47A590096C8EC /* icon／秀场／活动标签／彩色@3x.png in Resources */,
+				C486375922C47A5A0096C8EC /* qiandao_btn_return_nor@3x(2).png in Resources */,
+				C486374C22C47A5A0096C8EC /* icon／秀场／播放.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C486351B22C1BD5D0096C8EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C486352622C1BD5D0096C8EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C486350122C1BD580096C8EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C48635BE22C20C750096C8EC /* HYFBaseModel.m in Sources */,
+				C48636E422C45D100096C8EC /* HYFBaseCollectionView.m in Sources */,
+				C4F3188D22C60BC400DF2C28 /* HYFPhotosPickerLayout.m in Sources */,
+				C4EE225022C8ACFA00ADF795 /* HYFPreThumdBottomViewCell.m in Sources */,
+				C48636EF22C462430096C8EC /* HYFPhotosPickerCell.m in Sources */,
+				C486350D22C1BD580096C8EC /* ViewController.m in Sources */,
+				C48635C522C20D210096C8EC /* UIViewController+Util.m in Sources */,
+				C48635D122C20FA80096C8EC /* HYFBaseNavVC.m in Sources */,
+				C48635AD22C1CDB60096C8EC /* HYFAlbumManager.m in Sources */,
+				C4F3188322C5C34800DF2C28 /* UIView+HYF.m in Sources */,
+				C48635CB22C20F390096C8EC /* HYFAlbumListVC.m in Sources */,
+				C4F3188622C6001800DF2C28 /* HYFPhotosPreviewVC.m in Sources */,
+				C4F3188922C600FB00DF2C28 /* HYFPhotosPreviewCell.m in Sources */,
+				C486351822C1BD5D0096C8EC /* main.m in Sources */,
+				C48636EA22C45E690096C8EC /* HYFPhotosPickerVC.m in Sources */,
+				C48636F222C46BDE0096C8EC /* HYFAssetModel.m in Sources */,
+				C486350A22C1BD580096C8EC /* AppDelegate.m in Sources */,
+				C486353E22C1BDDC0096C8EC /* HYFAlbumTool.m in Sources */,
+				C48635C822C20E1C0096C8EC /* NSObject+Util.m in Sources */,
+				C4EE224D22C8A70B00ADF795 /* HYFBottomView.m in Sources */,
+				C486354122C1BE050096C8EC /* HYFCacheTool.m in Sources */,
+				C48636DE22C3A7330096C8EC /* HYFAlbumDataCenter.m in Sources */,
+				C48635B822C20C3B0096C8EC /* HYFBaseTableView.m in Sources */,
+				C48635CE22C20F7B0096C8EC /* HYFAlbumListTableView.m in Sources */,
+				C4EE224722C66D6200ADF795 /* HYFBasePreViewCell.m in Sources */,
+				C48635BB22C20C5C0096C8EC /* HYFBaseVC.m in Sources */,
+				C4F3189022C60BDF00DF2C28 /* HYFPhotosPreviewLayout.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C486351922C1BD5D0096C8EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C486352222C1BD5D0096C8EC /* HYFImagePickTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C486352422C1BD5D0096C8EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C486352D22C1BD5D0096C8EC /* HYFImagePickUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C486351F22C1BD5D0096C8EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C486350422C1BD580096C8EC /* HYFImagePick */;
+			targetProxy = C486351E22C1BD5D0096C8EC /* PBXContainerItemProxy */;
+		};
+		C486352A22C1BD5D0096C8EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C486350422C1BD580096C8EC /* HYFImagePick */;
+			targetProxy = C486352922C1BD5D0096C8EC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C486350E22C1BD580096C8EC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C486350F22C1BD580096C8EC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C486351322C1BD5D0096C8EC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C486351422C1BD5D0096C8EC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C486352F22C1BD5D0096C8EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C486353022C1BD5D0096C8EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C486353222C1BD5D0096C8EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T586HGP9C9;
+				INFOPLIST_FILE = HYFImagePick/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fastlanfeng.test.HYFImagePick;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C486353322C1BD5D0096C8EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T586HGP9C9;
+				INFOPLIST_FILE = HYFImagePick/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fastlanfeng.test.HYFImagePick;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C486353522C1BD5D0096C8EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T586HGP9C9;
+				INFOPLIST_FILE = HYFImagePickTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fastlanfeng.test.HYFImagePickTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HYFImagePick.app/HYFImagePick";
+			};
+			name = Debug;
+		};
+		C486353622C1BD5D0096C8EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T586HGP9C9;
+				INFOPLIST_FILE = HYFImagePickTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fastlanfeng.test.HYFImagePickTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HYFImagePick.app/HYFImagePick";
+			};
+			name = Release;
+		};
+		C486353822C1BD5D0096C8EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T586HGP9C9;
+				INFOPLIST_FILE = HYFImagePickUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fastlanfeng.test.HYFImagePickUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HYFImagePick;
+			};
+			name = Debug;
+		};
+		C486353922C1BD5D0096C8EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T586HGP9C9;
+				INFOPLIST_FILE = HYFImagePickUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fastlanfeng.test.HYFImagePickUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HYFImagePick;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C486350022C1BD580096C8EC /* Build configuration list for PBXProject "HYFImagePick" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C486352F22C1BD5D0096C8EC /* Debug */,
+				C486353022C1BD5D0096C8EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C486353122C1BD5D0096C8EC /* Build configuration list for PBXNativeTarget "HYFImagePick" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C486353222C1BD5D0096C8EC /* Debug */,
+				C486353322C1BD5D0096C8EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C486353422C1BD5D0096C8EC /* Build configuration list for PBXNativeTarget "HYFImagePickTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C486353522C1BD5D0096C8EC /* Debug */,
+				C486353622C1BD5D0096C8EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C486353722C1BD5D0096C8EC /* Build configuration list for PBXNativeTarget "HYFImagePickUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C486353822C1BD5D0096C8EC /* Debug */,
+				C486353922C1BD5D0096C8EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C48634FD22C1BD580096C8EC /* Project object */;
+}

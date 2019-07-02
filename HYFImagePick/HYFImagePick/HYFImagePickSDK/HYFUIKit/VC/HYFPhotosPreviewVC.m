@@ -19,7 +19,8 @@
 @interface HYFPhotosPreviewVC ()
 <UICollectionViewDelegate,
 UICollectionViewDataSource,
-HYFPhotosPreviewCellDelegate>
+HYFPhotosPreviewCellDelegate,
+HYFPreThumbBottomViewDelegate>
 @property (nonatomic,strong) UICollectionView * previewCollectionView;
 @property (nonatomic,strong) HYFPreViewBottomView * preViewBottomView;
 @property (nonatomic,strong) HYFPreThumbBottomView * preThumdBottomView;
@@ -36,7 +37,8 @@ HYFPhotosPreviewCellDelegate>
 }
 -(HYFPreThumbBottomView *)preThumdBottomView{
     if (!_preThumdBottomView) {
-        _preThumdBottomView = [[HYFPreThumbBottomView alloc]initWithFrame:CGRectMake(0, self.preViewBottomView.top - 75, 75, 75)];
+        _preThumdBottomView = [[HYFPreThumbBottomView alloc]initWithFrame:CGRectMake(0, self.preViewBottomView.top - 75, KHYFScreenWidth, 75)];
+        _preThumdBottomView.delegate = self;
     }
     return _preThumdBottomView;
 }
@@ -47,7 +49,7 @@ HYFPhotosPreviewCellDelegate>
         layout.itemSize =self.view.bounds.size;
         layout.minimumInteritemSpacing = 0;
         layout.minimumLineSpacing = 0;
-        _previewCollectionView = [[UICollectionView alloc]initWithFrame:self.view.bounds collectionViewLayout: layout];
+        _previewCollectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(self.view.left, self.view.top, self.view.width,self.preViewBottomView.top )collectionViewLayout: layout];
         _previewCollectionView.backgroundColor = [UIColor blackColor];
         _previewCollectionView.contentInset = UIEdgeInsetsMake(0, 5, 0, 5);;
         [_previewCollectionView registerClass:[HYFPhotoPreViewCell class] forCellWithReuseIdentifier:NSStringFromClass([HYFPhotoPreViewCell class])];
@@ -88,8 +90,13 @@ HYFPhotosPreviewCellDelegate>
 //    [cell recoverSubviews];
     return cell;
 }
-
-
+#pragma mark HYFPreThumbBottomView
+-(void)thumbCellClick:(NSIndexPath *)indexPath andModel:(HYFAssetModel *)assetModel{
+    if (assetModel) {
+     NSInteger index = [HYFDataCenter.albumRollArr indexOfObject:assetModel];
+     [self.previewCollectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:index inSection:0] atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:YES];
+    }
+}
 
 
 

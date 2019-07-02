@@ -9,8 +9,6 @@
 #import "HYFBottomView.h"
 #import "HYFMacroHeader.h"
 #import "HYFAlbumDataCenter.h"
-#import "HYFAssetModel.h"
-
 
 
 @interface HYFBottomView()
@@ -91,7 +89,7 @@
 
 @implementation HYFPreViewBottomView
 -(void)initView{
-    self.backgroundColor = [UIColor clearColor];
+    self.backgroundColor = [UIColor blackColor];
     [self addSubview:self.sendBtn];
     [self addSubview:self.previewBtn];
     [self.sendBtn addTarget:self action:@selector(editBtnClick:) forControlEvents:UIControlEventTouchUpInside];
@@ -131,11 +129,15 @@
         _thumdCollectionView.delegate = self;
         _thumdCollectionView.dataSource = self;
         _thumdCollectionView.pagingEnabled = YES;
-        _thumdCollectionView.backgroundColor = [UIColor clearColor];
+        _thumdCollectionView.backgroundColor = [UIColor blackColor];
         _thumdCollectionView.showsVerticalScrollIndicator = NO;
         _thumdCollectionView.showsVerticalScrollIndicator = NO;
     }
     return _thumdCollectionView;
+}
+-(void)refreshViewWithModel:(HYFAssetModel *)model{
+    
+    
 }
 -(instancetype)initWithFrame:(CGRect)frame{
     if (self = [super initWithFrame:frame]) {
@@ -156,6 +158,13 @@
 #pragma mark collection-delegate
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     
+    HYFPreThumdBottomViewCell * cell = (HYFPreThumdBottomViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
+    [cell setIsCurrentPreCell:YES];
+    
+    if (self.delegate && [self.delegate respondsToSelector:@selector(thumbCellClick:andModel:)]) {
+        [self.delegate thumbCellClick:indexPath andModel:HYFDataCenter.albumRollArr[indexPath.row]];
+    }
+    
 }
 #pragma mark collection-dataSource
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
@@ -169,7 +178,6 @@
     }
     cell.indexPath = indexPath;
     cell.assetModel = model;
-    //    [cell recoverSubviews];
     return cell;
 }
 @end

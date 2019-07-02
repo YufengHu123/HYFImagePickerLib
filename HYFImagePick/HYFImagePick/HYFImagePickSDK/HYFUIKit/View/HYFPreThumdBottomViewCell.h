@@ -23,7 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 -(instancetype)initWithFrame:(CGRect)frame;
 -(void)changeSelecctStateWith:(NSIndexPath *)indexPath andModel:(HYFAssetModel *)assetModel;
-
+-(void)setIsCurrentPreCell:(BOOL)isCurrent;
 @end
 
 NS_ASSUME_NONNULL_END

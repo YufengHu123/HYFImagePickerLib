@@ -77,8 +77,10 @@
                                                           options:options
                                                     resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info)
              {
-                 [photos addObject:result];
-                 [tempInfos addObject:info];
+                 if (result) {
+                     [photos addObject:result];
+                     [tempInfos addObject:info];
+                 }
              }];
         }
         // go back main thread

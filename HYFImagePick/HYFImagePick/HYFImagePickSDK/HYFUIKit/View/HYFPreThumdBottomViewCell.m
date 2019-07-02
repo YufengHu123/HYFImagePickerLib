@@ -37,6 +37,15 @@
         self.thumdIamgeView.layer.borderColor = [UIColor redColor].CGColor;
     }
 }
+-(void)setIsCurrentPreCell:(BOOL)isCurrent{
+    if (isCurrent) {
+        self.thumdIamgeView.layer.borderWidth = 2;
+        self.thumdIamgeView.layer.borderColor = [UIColor redColor].CGColor;
+    }else{
+        self.thumdIamgeView.layer.borderWidth = 0;
+        self.thumdIamgeView.layer.borderColor = [UIColor clearColor].CGColor;
+    }
+}
 -(void)initView{
     [self.contentView addSubview:self.thumdIamgeView];
 }

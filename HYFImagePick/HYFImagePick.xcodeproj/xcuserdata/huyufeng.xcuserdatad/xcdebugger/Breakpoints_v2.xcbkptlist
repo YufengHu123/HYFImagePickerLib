@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HYFImagePick/HYFImagePickSDK/HYFUtil/HYFAlbumManager.m"
-            timestampString = "583293623.353646"
+            timestampString = "583653831.455114"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "34"
@@ -74,7 +74,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HYFImagePick/HYFImagePickSDK/HYFUtil/HYFAlbumManager.m"
-            timestampString = "583293623.354129"
+            timestampString = "583653831.455246"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "22"
@@ -112,32 +112,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "HYFImagePick/HYFImagePickSDK/HYFUIKit/View/HYFBottomView.m"
-            timestampString = "583593323.096938"
+            filePath = "HYFImagePick/HYFImagePickSDK/HYFUtil/HYFAlbumManager.m"
+            timestampString = "583653831.4554369"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "166"
-            endingLineNumber = "166"
-            landmarkName = "-collectionView:cellForItemAtIndexPath:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "HYFImagePick/HYFImagePickSDK/HYFUIKit/View/HYFBottomView.m"
-            timestampString = "583593323.097361"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "171"
-            endingLineNumber = "171"
-            landmarkName = "-collectionView:cellForItemAtIndexPath:"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
+            landmarkName = "+getAllPhotosWith:isOrignial:and:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

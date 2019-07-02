@@ -40,7 +40,7 @@
 }
 -(void)initDataWith:(void (^)(BOOL))finshInitData{
     [HYFAlbumManager getCameraRoll:^(PHAssetCollection * _Nonnull cameraRoll) {
-        [HYFAlbumManager getAllPhotosWith:cameraRoll isOrignial:NO and:^(NSArray<UIImage *> * _Nonnull Photos, NSArray<NSDictionary *> * _Nonnull infos) {
+        [HYFAlbumManager getAllPhotosWith:cameraRoll isOrignial:YES and:^(NSArray<UIImage *> * _Nonnull Photos, NSArray<NSDictionary *> * _Nonnull infos) {
             for (NSInteger index = 0; index < Photos.count; index ++) {
                 HYFAssetModel * model = [[HYFAssetModel alloc]init];
                 model.info = infos[index];

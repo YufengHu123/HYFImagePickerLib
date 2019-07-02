@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HYFAssetModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -35,11 +36,13 @@ NS_ASSUME_NONNULL_BEGIN
 -(void)refreshBtnState;
 @end
 #pragma mark
-@protocol HYFPreThumbBottomView <NSObject>
+@protocol HYFPreThumbBottomViewDelegate <NSObject>
 @optional
+-(void)thumbCellClick:(NSIndexPath*)indexPath andModel:(HYFAssetModel *)assetModel;
 @end
 @interface HYFPreThumbBottomView : UIView
-@property (nonatomic,weak) id<HYFPreViewBottomViewDelegate> delegate;
+@property (nonatomic,weak) id<HYFPreThumbBottomViewDelegate> delegate;
+-(void)refreshViewWithModel:(HYFAssetModel *)model;
 @end
 
 NS_ASSUME_NONNULL_END

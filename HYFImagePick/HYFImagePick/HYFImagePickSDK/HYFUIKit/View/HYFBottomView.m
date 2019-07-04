@@ -92,19 +92,22 @@
     self.backgroundColor = [UIColor blackColor];
     [self addSubview:self.sendBtn];
     [self addSubview:self.previewBtn];
-    [self.sendBtn addTarget:self action:@selector(editBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.previewBtn setTitle:@"编辑" forState:UIControlStateNormal];
+    self.sendBtn.enabled = YES;
+    self.previewBtn.enabled = YES;
+    [self.sendBtn addTarget:self action:@selector(sendBtnClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.previewBtn addTarget:self action:@selector(previewBtnClick:) forControlEvents:UIControlEventTouchUpInside];
 }
 
--(void)editBtnClick:(UIButton *)btn{
-//    if (self.delegate && [self.delegate respondsToSelector:@selector(previewBtnClickWithIndex)]) {
-//        [self.delegate previewBtnClickWithIndex];
-//    }
-}
 -(void)sendBtnClick:(UIButton *)btn{
-//    if (self.delegate &&[ self.delegate respondsToSelector:@selector(sendBtnClick)]) {
-//        [self.delegate sendBtnClick];
-//    }
+    if (self.delegate && [self.delegate respondsToSelector:@selector(sendBtnClick)]) {
+        [self.delegate sendBtnClick];
+    }
+}
+-(void)previewBtnClick:(UIButton *)btn{
+    if (self.delegate &&[ self.delegate respondsToSelector:@selector(editBtnClick)]) {
+        [self.delegate editBtnClick];
+    }
 }
 
 @end

@@ -30,6 +30,8 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark HYFPickerBottomView
 @protocol HYFPreViewBottomViewDelegate <NSObject>
 @optional
+-(void)editBtnClick;
+-(void)sendBtnClick;
 @end
 @interface HYFPreViewBottomView : HYFBottomView
 @property (nonatomic,weak) id<HYFPreViewBottomViewDelegate> delegate;

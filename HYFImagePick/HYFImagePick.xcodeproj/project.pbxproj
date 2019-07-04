@@ -87,6 +87,8 @@
 		C4EE224722C66D6200ADF795 /* HYFBasePreViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EE224622C66D6200ADF795 /* HYFBasePreViewCell.m */; };
 		C4EE224D22C8A70B00ADF795 /* HYFBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EE224C22C8A70B00ADF795 /* HYFBottomView.m */; };
 		C4EE225022C8ACFA00ADF795 /* HYFPreThumdBottomViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EE224F22C8ACFA00ADF795 /* HYFPreThumdBottomViewCell.m */; };
+		C4EE22F822CB838F00ADF795 /* HYFEditVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EE22F722CB838F00ADF795 /* HYFEditVC.m */; };
+		C4EE22FB22CB843700ADF795 /* HYFEditNavView.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EE22FA22CB843700ADF795 /* HYFEditNavView.m */; };
 		C4F3188322C5C34800DF2C28 /* UIView+HYF.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F3188222C5C34800DF2C28 /* UIView+HYF.m */; };
 		C4F3188622C6001800DF2C28 /* HYFPhotosPreviewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F3188522C6001800DF2C28 /* HYFPhotosPreviewVC.m */; };
 		C4F3188922C600FB00DF2C28 /* HYFPhotosPreviewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F3188822C600FB00DF2C28 /* HYFPhotosPreviewCell.m */; };
@@ -220,6 +222,10 @@
 		C4EE224C22C8A70B00ADF795 /* HYFBottomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYFBottomView.m; sourceTree = "<group>"; };
 		C4EE224E22C8ACFA00ADF795 /* HYFPreThumdBottomViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYFPreThumdBottomViewCell.h; sourceTree = "<group>"; };
 		C4EE224F22C8ACFA00ADF795 /* HYFPreThumdBottomViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYFPreThumdBottomViewCell.m; sourceTree = "<group>"; };
+		C4EE22F622CB838F00ADF795 /* HYFEditVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYFEditVC.h; sourceTree = "<group>"; };
+		C4EE22F722CB838F00ADF795 /* HYFEditVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYFEditVC.m; sourceTree = "<group>"; };
+		C4EE22F922CB843700ADF795 /* HYFEditNavView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYFEditNavView.h; sourceTree = "<group>"; };
+		C4EE22FA22CB843700ADF795 /* HYFEditNavView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYFEditNavView.m; sourceTree = "<group>"; };
 		C4F3188122C5C34800DF2C28 /* UIView+HYF.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+HYF.h"; sourceTree = "<group>"; };
 		C4F3188222C5C34800DF2C28 /* UIView+HYF.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+HYF.m"; sourceTree = "<group>"; };
 		C4F3188422C6001800DF2C28 /* HYFPhotosPreviewVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYFPhotosPreviewVC.h; sourceTree = "<group>"; };
@@ -376,6 +382,8 @@
 				C4EE224C22C8A70B00ADF795 /* HYFBottomView.m */,
 				C4EE224E22C8ACFA00ADF795 /* HYFPreThumdBottomViewCell.h */,
 				C4EE224F22C8ACFA00ADF795 /* HYFPreThumdBottomViewCell.m */,
+				C4EE22F922CB843700ADF795 /* HYFEditNavView.h */,
+				C4EE22FA22CB843700ADF795 /* HYFEditNavView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -398,6 +406,8 @@
 				C48636E922C45E690096C8EC /* HYFPhotosPickerVC.m */,
 				C4F3188422C6001800DF2C28 /* HYFPhotosPreviewVC.h */,
 				C4F3188522C6001800DF2C28 /* HYFPhotosPreviewVC.m */,
+				C4EE22F622CB838F00ADF795 /* HYFEditVC.h */,
+				C4EE22F722CB838F00ADF795 /* HYFEditVC.m */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -701,6 +711,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4EE22FB22CB843700ADF795 /* HYFEditNavView.m in Sources */,
 				C48635BE22C20C750096C8EC /* HYFBaseModel.m in Sources */,
 				C48636E422C45D100096C8EC /* HYFBaseCollectionView.m in Sources */,
 				C4F3188D22C60BC400DF2C28 /* HYFPhotosPickerLayout.m in Sources */,
@@ -725,6 +736,7 @@
 				C48636DE22C3A7330096C8EC /* HYFAlbumDataCenter.m in Sources */,
 				C48635B822C20C3B0096C8EC /* HYFBaseTableView.m in Sources */,
 				C48635CE22C20F7B0096C8EC /* HYFAlbumListTableView.m in Sources */,
+				C4EE22F822CB838F00ADF795 /* HYFEditVC.m in Sources */,
 				C4EE224722C66D6200ADF795 /* HYFBasePreViewCell.m in Sources */,
 				C48635BB22C20C5C0096C8EC /* HYFBaseVC.m in Sources */,
 				C4F3189022C60BDF00DF2C28 /* HYFPhotosPreviewLayout.m in Sources */,

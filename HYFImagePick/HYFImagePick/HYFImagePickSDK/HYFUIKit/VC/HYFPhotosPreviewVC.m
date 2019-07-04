@@ -15,23 +15,25 @@
 #import "HYFBasePreViewCell.h"
 #import "UIView+HYF.h"
 #import "HYFBottomView.h"
+#import "HYFEditVC.h"
 
 @interface HYFPhotosPreviewVC ()
 <UICollectionViewDelegate,
 UICollectionViewDataSource,
 HYFPhotosPreviewCellDelegate,
-HYFPreThumbBottomViewDelegate>
+HYFPreThumbBottomViewDelegate,
+HYFPreViewBottomViewDelegate>
 @property (nonatomic,strong) UICollectionView * previewCollectionView;
 @property (nonatomic,strong) HYFPreViewBottomView * preViewBottomView;
 @property (nonatomic,strong) HYFPreThumbBottomView * preThumdBottomView;
-
+@property (nonatomic,strong) NSIndexPath * currentIndexPath;
 @end
 
 @implementation HYFPhotosPreviewVC
 -(HYFPreViewBottomView *)preViewBottomView{
   if (!_preViewBottomView) {
     _preViewBottomView = [[HYFPreViewBottomView alloc]initWithFrame:CGRectMake(0, self.view.height - KHYFTabbarHeight, KHYFScreenWidth, KHYFTabbarHeight)];
-//    _PreViewBottomView.delegate = self;
+    _preViewBottomView.delegate = self;
      }
   return _preViewBottomView;
 }
@@ -62,7 +64,7 @@ HYFPreThumbBottomViewDelegate>
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    [self.navigationController setNavigationBarHidden:YES];
+    [self.navigationController setNavigationBarHidden:YES];
     self.view.backgroundColor = [UIColor blackColor];
     [self.view addSubview:self.previewCollectionView];
     [self.view addSubview:self.preViewBottomView];
@@ -80,6 +82,7 @@ HYFPreThumbBottomViewDelegate>
     return HYFDataCenter.albumRollArr.count;
 }
 - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
+    self.currentIndexPath = indexPath;
     HYFAssetModel *model = HYFDataCenter.albumRollArr[indexPath.row];
     HYFPhotoPreViewCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([HYFPhotoPreViewCell class]) forIndexPath:indexPath];
     if (!cell) {
@@ -96,6 +99,13 @@ HYFPreThumbBottomViewDelegate>
      NSInteger index = [HYFDataCenter.albumRollArr indexOfObject:assetModel];
      [self.previewCollectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:index inSection:0] atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:YES];
     }
+}
+#pragma mark HYFPreViewBottomViewDelegate
+-(void)editBtnClick{
+    HYFEditVC * editVC = [HYFEditVC new];
+    HYFAssetModel * assetModel = HYFDataCenter.albumRollArr[self.currentIndexPath.item];
+    editVC.assetModel = assetModel;
+    [self.navigationController pushViewController:editVC animated:YES];
 }
 
 
